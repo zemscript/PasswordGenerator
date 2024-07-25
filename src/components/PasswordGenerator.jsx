@@ -4,6 +4,7 @@ import {
   Section,
   Wrapper,
   Flex,
+  TitleWrapper,
   Title,
   PasswordBlock,
   PasswordValue,
@@ -74,7 +75,9 @@ function PasswordGenerator() {
   return (
     <Section>
       <Wrapper>
-        <Title>Генератор паролей</Title>
+        <TitleWrapper>
+          <Title>Генератор паролей</Title>
+        </TitleWrapper>
         <Flex>
           <PasswordBlock>
             <SubTitle>Настройка пароля</SubTitle>

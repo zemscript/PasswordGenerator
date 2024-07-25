@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+  @media (max-width: 767px) and (min-width: 320px) {
+    margin-top: 5rem;
+  }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    margin-top: 10rem;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -15,16 +20,24 @@ export const Wrapper = styled.div`
 
 export const Flex = styled.div`
   display: flex;
-  @media (max-width: 1023px) and (min-width: 320px) {
+  justify-content: center;
+  @media (max-width: 767px) and (min-width: 320px) {
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+export const TitleWrapper = styled.div`
+  margin-bottom: 3rem;
 `;
 
 export const Title = styled.h1`
   font-family: var(--fontTitle);
   font-size: 2.5rem;
-  margin-bottom: 3rem;
   text-align: center;
   user-select: none;
 `;
@@ -82,7 +95,6 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  width: 100%;
 
   &:hover {
     background-color: var(--colorHover);
