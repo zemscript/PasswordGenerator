@@ -1,10 +1,12 @@
 import "react";
-import { Ftr, FtrList, FtrItem } from "./FooterStyle";
+import { Ftr, FtrList, FtrItem, FtrLink } from "./FooterStyle";
 function Footer() {
   return (
     <Ftr>
       <FtrList>
-        <FtrItem>Генератор паролей</FtrItem>
+        <FtrItem>
+          <FtrLink href="https://github.com/zemscript">GitHub | zemscript</FtrLink>
+        </FtrItem>
       </FtrList>
     </Ftr>
   );

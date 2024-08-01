@@ -1,1 +1,1 @@
-https://zemscript.github.io/PasswordGenerator/
+# [Генератор паролей](https://zemscript.github.io/PasswordGenerator/)

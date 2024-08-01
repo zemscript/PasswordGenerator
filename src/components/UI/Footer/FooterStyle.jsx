@@ -19,3 +19,12 @@ export const FtrList = styled.ul`
 export const FtrItem = styled.li`
   user-select: none;
 `;
+
+export const FtrLink = styled.a`
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    color: #c0c0c0;
+  }
+`;
